@@ -27,11 +27,14 @@ const init = () => {
       console.log('Correct!');
     } else {
       score = 0;
-      return console.log(`${input} is wrong answer ;(. Correct answer was '${correct}' \nLet's try again, ${name}!`);
+      console.log(`${input} is wrong answer ;(. Correct answer was '${correct}' \nLet's try again, ${name}!`);
+
+      return false;
     }
   }
 
   console.log(`Congratulations, ${name}!`);
+  return true;
 };
 
 export default init;
