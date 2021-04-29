@@ -27,7 +27,7 @@ const init = () => {
       console.log('Correct!');
     } else {
       score = 0;
-      console.log(`${input} is wrong answer ;(. Correct answer was '${correct}' \nLet's try again, ${name}!`);
+      return console.log(`${input} is wrong answer ;(. Correct answer was '${correct}' \nLet's try again, ${name}!`);
     }
   }
 
